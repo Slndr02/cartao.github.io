@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartao</title>
+    <link rel="stylesheet" href="cartao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Magra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="float: left; padding-top: 50px; position: relative; margin-left: 100px;">
+    
+        <img width="70%" height="70%" src="https://www.picng.com/upload/credit_card/png_credit_card_30099.png"
+        >
+     </div>
+    <div class="mode">
+        <button  class="change" onclick="myFunction()">Modo Escuro</button>
+    </div>
+    <form static-form>
+    <h1>Veja se seu cartão<br>vazou na internet</h1>
+    <div class="caixas">
+    <p>
+    <label class="tipo">Nome no Cartão</label> 
+    <input class="boxinput" type="text" name="fname">
+    </p>
+
+    <p>
+    <label class="tipo">Numero do Cartão</label> 
+    <input class="boxinput" type="number" name="fname">
+    </p>
+
+    <p>
+        <label class="tipo">Validade</label> 
+        <input class="boxinput" type="month" name="fname" min="2022-01" required>
+    </p>
+    
+        <input type="submit">
+    </div>
+    </form>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
